@@ -35,7 +35,7 @@ def teleop():
     while not rospy.is_shutdown():
         key = getkey()
         if key == 'w':
-            velocity = velocity + 0.05
+            velocity = velocity + 0.1
             #steering = 0.0
             status = status + 1
         elif key == 's':
@@ -49,7 +49,7 @@ def teleop():
             steering = steering - 2
             status = status + 1
         elif key == 'x':
-            velocity = velocity - 0.05
+            velocity = velocity - 0.1
             #steering = 0.0
             status = status + 1
         else:
